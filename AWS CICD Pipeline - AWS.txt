@@ -95,7 +95,7 @@ It’s automatically highly available across AZs.
 
 
     Create Database-SG - Inbound MySQL, Custom  = Allow from App-SG or 192.168.0.0/16. we are giving access to entire vpc traffic
-                         Inbound MySQL, Custom = Bastion-SG
+                         Inbound MySQL, Custom = Bastion-SG  (You don’t SSH directly into the DB instance, but you can run MySQL client commands from the Bastion to reach the DB securely.)
     
 2. Launching Bastion Host - Amazon Linux 2023-Public Subnet, and Bastion-SG
 =======================================================
