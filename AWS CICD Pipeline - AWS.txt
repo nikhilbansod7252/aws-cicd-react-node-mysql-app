@@ -320,6 +320,9 @@ Navigate to Systems Manager --> Parameter stores
 =================================================================
 
 
+till now we had only set infrastructure now we have to create CI/CD Pipeline using CodePipeline, CodeBuild and CodeDeploy
+
+
 10: Setup CI / CD for the Project: Configuring CodeBuild for Application Tier
 =============================================================================
 
