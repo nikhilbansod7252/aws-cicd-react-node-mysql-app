@@ -341,7 +341,7 @@ Go to CodePipeline --> Settings ---> Connections --> Create Connection --> Selec
 Install new app ---> and continue and give full access to all repos
 
 or
--> Create a new GitHub connection --> connection name=githubconnection --> connect to github--> authorize aws connector for GitHub --> instal a new app --> only select repositories --> select your repo --> install&authorize --> connect--> select dropdown --> githubconnection ---> save
+settings -> connections -> Create a new GitHub connection --> connection name=githubconnection --> connect to github--> authorize aws connector for GitHub --> instal a new app --> only select repositories --> select your repo --> install&authorize --> connect--> select dropdown --> githubconnection ---> save
 
 Navigate to CodeBuild
 
