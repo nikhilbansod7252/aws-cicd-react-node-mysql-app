@@ -52,6 +52,23 @@ appsec.yml is typically used for application related, install, move, copy etc in
 
   
 --> Create NAT(3-tier-project-NAT) with EIP in PublicSubnet1a
+Traditional (Before Update)
+NAT Gateway was strictly zonal.
+
+You had to create one NAT per AZ if you wanted high availability.
+
+Example: If you had private subnets in ap-south-1a and ap-south-1b, you’d create two NAT Gateways (one in each AZ) and configure each subnet’s route table to point to its local NAT.
+
+If you routed traffic from ap-south-1b to a NAT in ap-south-1a, it worked but caused cross‑AZ traffic, extra cost, and latency.
+
+🔹 New Update (Regional NAT Gateway)
+AWS introduced Regional NAT Gateways (2025 update).
+
+Now you can create one NAT Gateway per VPC and it automatically provides connectivity across all AZs in that region.
+
+This eliminates the need for multiple NATs per AZ, simplifies route tables, and reduces cost.
+
+It’s automatically highly available across AZs.
 
 --> Create Routing Tables  : 3-tier-project-public-rt and 3-tier-project-private-rt
 
