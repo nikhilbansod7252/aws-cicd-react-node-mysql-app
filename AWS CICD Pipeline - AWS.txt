@@ -83,7 +83,7 @@ It’s automatically highly available across AZs.
 
     Create Bastion-SG - Inbound ssh ,  Anywhere 0.0.0.0/0  , Tag : Name = Bastion-SG
 
-    Create WebALB-SG - Inbound http, https ,  Anywhere 0.0.0.0/0 
+    Create WebALB-SG - Inbound http, https ,  Anywhere 0.0.0.0/0   (ALB listen on HTTP and HTTPS)
 
     Create Web-SG - Inbound http, https , custom = Allow from WebALB-SG or 192.168.0.0/16
                     Inbound ssh from Custom = Bastion-SG
