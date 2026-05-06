@@ -322,6 +322,17 @@ Navigate to Systems Manager --> Parameter stores
 
 till now we had only set infrastructure now we have to create CI/CD Pipeline using CodePipeline, CodeBuild and CodeDeploy
 
+so will put our code in gitHub and will pull code to codebuild so in CodeBuild there is file called buildspec.yml which is responsible for how the code has to be build 
+u can see in backedn folder and frontend folder
+for deploy we use CodeDeploy service and ther is file called appspec.yml whil contains how to deploy the code
+
+so we nned to create 2 code pipelines 1 for backend tier(app tier) and 1 for frontend tier(web tier)
+
+CodePipeline is combination of CodeBuild and CodeDeplpoy
+
+1st we create CodeBuild then CodeDeploy and then CodePipeline
+
+before this u need to set github connection for this we previously use CodeCommit service but it depricated so we use diff method for conn
 
 10: Setup CI / CD for the Project: Configuring CodeBuild for Application Tier
 =============================================================================
