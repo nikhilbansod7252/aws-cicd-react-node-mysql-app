@@ -30,6 +30,12 @@ buildspec.yml is a YAML file that defines the build process for AWS CodeBuild. I
 
 appsec.yml is typically used for application related, install, move, copy etc in CodePipeline.
 
+
+
+In NGINX configuration file there is health check path 
+In app.js there is health check path mentioned
+
+
 1. Create a VPC 
 ===============
 
